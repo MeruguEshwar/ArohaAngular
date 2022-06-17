@@ -1,0 +1,70 @@
+
+
+
+   <mat-card>
+    <mat-card-content style="font-size: 12px">
+
+        <mat-card-title-group  class="d-flex justify-content-center">
+            <mat-card-title>SignUp</mat-card-title>
+            <!-- <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+          </mat-card-title-group>
+
+            <mat-form-field class="example-full-width"  appearance='outline'>
+                <mat-label>Full Name</mat-label>
+                <input required matInput>
+            </mat-form-field>
+
+          <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+            <mat-label>Email</mat-label>
+            <input required matInput>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+            <mat-label>Phone Number</mat-label>
+            <input required matInput>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+            <mat-label>DOB</mat-label>
+            <!-- <input type="email" matInputplaceholder="DD/MM/YY"> -->
+            <input required matInput>
+          </mat-form-field>
+
+          <form [formGroup]="signin">
+            <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+              <mat-icon matSuffix (click)="hide = !hide"></mat-icon>          
+            </mat-form-field>
+          </form>
+
+          <form [formGroup]="signin">
+            <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+              <mat-label>Conform Password</mat-label>
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+              <mat-icon matSuffix (click)="hide = !hide"></mat-icon>          
+            </mat-form-field>
+          </form>
+        
+          <mat-radio-group
+            aria-labelledby="example-radio-group-label"
+            class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+              {{season}}
+            </mat-radio-button>
+          </mat-radio-group>
+
+
+
+
+          <div class="example-button-row d-flex justify-content-around m-3">
+            <button mat-raised-button color="accent" (click)="go()">login</button>
+            <button mat-raised-button color="accent" (click)="showToasterWarning()">Submit</button> 
+        </div>
+        
+    </mat-card-content>
+  </mat-card>
+
+
+
+

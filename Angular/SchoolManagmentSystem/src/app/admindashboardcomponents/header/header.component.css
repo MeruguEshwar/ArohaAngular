@@ -1,0 +1,83 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .navbar-toggler-icon{
+    color: red;
+  }
+
+
+/* Side nav */
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 92%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin-top:54px;
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    cursor: pointer;
+
+    background: #1a1a1a;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  .sidenav a {
+    padding: 1px 6px 3px 28px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    line-height: 20px;
+    display: inline-block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 55px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 20px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.nav .open > a:hover, 
+.nav .open > a:focus {background-color: transparent;}
+  
+
+i{
+  padding: 5px;
+  padding-left:10px;
+}

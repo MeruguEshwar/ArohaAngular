@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript Sortig methods By using Numbers..</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+
+
+<script>
+
+let text = [100,10,50,5,70,60];
+  document.getElementById("demo").innerHTML = text;
+
+
+//Ascending Order
+function myFunction() {
+  text.sort(function(a,b) {return a-b});
+    document.getElementById("demo").innerHTML = text;
+}
+
+
+//Descending Order
+// function myFunction() {
+//   text.sort(function(a,b) {return a-b});
+//     document.getElementById("demo").innerHTML = text;
+// }
+</script>
+
+</body>
+</html>
+
+

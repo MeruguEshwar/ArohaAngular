@@ -1,0 +1,29 @@
+#boxshadow{
+    width: 250px;
+    box-shadow: 1px 4px 8px 3px rgba(0, 0, 0, 0.5), 1px 6px 20px 1px rgba(1, 0, 0, 0.50);
+  
+}
+
+
+td, th {
+    text-align: left;
+    padding:12px 80px;
+    color: whitesmoke;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+
+  h4{
+      font-weight: 900;
+  }

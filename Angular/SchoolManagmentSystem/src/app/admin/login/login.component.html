@@ -1,0 +1,36 @@
+
+<mat-card mt-5>
+    <mat-card-content style="font-size: 12px">
+
+        <mat-card-title-group  class="d-flex justify-content-center">
+            <mat-card-title>Login</mat-card-title>
+            <!-- <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" > -->
+          </mat-card-title-group>
+
+
+          <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+            <mat-label>Email</mat-label>
+            <input required matInput>
+          </mat-form-field>
+
+          <form [formGroup]="signin">
+            <mat-form-field class="example-full-width" hideRequiredMarker floatLabel='auto' appearance='outline'>
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" required>
+              <mat-icon matSuffix (click)="hide = !hide"></mat-icon>          
+            </mat-form-field>
+          </form>
+
+
+
+          <div class="example-button-row d-flex justify-content-around m-3">
+              <button mat-raised-button color="accent" (click)="StudentInfo()" (click)="showToasterWarning()">login</button>
+              <button mat-raised-button color="accent" (click)="go()">SignUp</button> 
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <a  routerLink="../signup" class="btn btn-link"  (click)="go()">Don't have an account ? Create One</a>
+          </div>
+        
+    </mat-card-content>
+  </mat-card>

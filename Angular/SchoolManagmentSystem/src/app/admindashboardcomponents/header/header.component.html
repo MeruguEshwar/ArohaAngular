@@ -1,0 +1,43 @@
+
+<div class="b-example-divider"></div>
+  <header class="p-2 bg-primary text-white sticky-top">
+    <div class="containe-fluidr">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <span style="font-size:25px; cursor:pointer; padding-top:5" onclick="openNav()">&#9776;</span>
+          <div id="mySidenav" class="sidenav">
+            <header>
+             <h1 class="ms-5 text-primary "><i class="fa fa-child" style="font-size:24px"></i>Montessori High School</h1>
+            </header>
+            <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+            <a class="nav-link" [routerLink]="['/loginDashboard']"><i class="fa fa-dashboard" style="font-size:24px;color:red"></i>Dashboard</a>
+            <a class="nav-link" [routerLink]="['/adminsection']"><i class="fa fa-address-card" style="font-size:24px"></i>Admission Section</a>
+            <a class="nav-link" [routerLink]="['/student-info']"><i class="fa fa-info-circle" style="font-size:24px"></i>Student Info</a>
+            <a class="nav-link" [routerLink]="['/teachers']"><i class="fa fa-child" style="font-size:24px"></i>Teachers</a>
+            <a class="nav-link" [routerLink]="['/feecollection']"><i class="fa fa-money" style="font-size:24px"></i>Fees Collection</a>
+            <a class="nav-link" [routerLink]="['/examination']"><i class="fa fa-book" style="font-size:24px"></i>Examination</a>
+            <a class="nav-link" [routerLink]="['/feecollection']"><i class="fa fa-money" style="font-size:24px"></i>Accounts</a>
+          </div>
+          
+          <li><a href="#" class="nav-link px-2 text-white ms-5">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Admission Section</a></li>
+          <li><a href="#" routerLink="/student" class="nav-link px-2 text-white">Student Information</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Teachers</a></li>
+        </ul>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2 rounded-pill">Book a Demo</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Login</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+

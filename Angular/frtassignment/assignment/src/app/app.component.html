@@ -1,0 +1,17 @@
+<!-- <label>Usename</label>
+<input type="text" 
+class="form-control" 
+[(ngModel)]="servername">
+<!-- <p>{{username}}</p> -->
+<!-- <button  
+  class="btn btn-primary" 
+  [disabled] = "!allowNewServeer"
+  (click)="oncreateServer()"> ResetUser</button>
+<br>
+<hr>
+<p *ngIf="serverCreated">Server was created,server name is {{ servername }}</p> --> -->
+<button (click)="toggleShow()" type="checkbox" >show/hide</button>
+<div *ngIf="isShown" class="row container-fluid"  id="divshow" >
+Div Content
+
+</div>

@@ -1,0 +1,10 @@
+.example-full-width{
+    width: 80%;
+    height: 20%;
+}
+
+.example-card {
+    max-width: 400px;
+    position: relative;
+  }
+  

@@ -1,0 +1,41 @@
+Course Content:
+
+What is web Application.
+Multi Page web Application.
+single page web Application (SPA).
+Angular Introduction.
+Angular JS vs Angular Framework.
+Angular Framework version history.
+Advantages of Angular
+Angular Architecture.
+
+
+TypeScript Introduction.
+Advan Of Type script.
+Java Script Vs Type Script.
+Environment Setup
+Varibles
+Data Types.
+OOps
+class
+Object
+Constructor
+Inheritance
+Access Modifiers
+Interfaces
+Enumerations
+Modules
+Examples usng type script...
+
+1st Cls
+-------
+Multi Page Application nd Single Page Application:-
+
+2nd Cls
+-------
+Web Application: Any Application which is running on the server is called web application.
+
+2 types of web applications:
+1.Multipage web application.
+2.Single page web application.
+

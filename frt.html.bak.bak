@@ -1,0 +1,278 @@
+<html>
+ <head>
+
+
+	<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		text: "Total Invoice"
+	},	
+	axisY: {
+		
+		titleFontColor: "#4F81BC",
+		lineColor: "#4F81BC",
+		labelFontColor: "#4F81BC",
+		tickColor: "#4F81BC"
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor:"pointer",
+		itemclick: toggleDataSeries
+	},
+	data: [{
+		type: "column",
+		legendText: "Invoice",
+		showInLegend: true, 
+		dataPoints:[
+			{ label: "Jan", y: 266.21 },
+			{ label: "Feb", y: 302.25 },
+			{ label: "Mar", y: 157.20 },
+			{ label: "April", y: 148.77 },
+			{ label: "May", y: 101.50 },
+			{ label: "June", y: 97.8 },
+			{ label: "July", y: 266.21 },
+			{ label: "Aug", y: 302.25 },
+			{ label: "Sep", y: 157.20 },
+			{ label: "Oct", y: 148.77 },
+			{ label: "Nov", y: 101.50 },
+			{ label: "Dec", y: 97.8 }
+		]
+	},
+	{
+		type: "column",	
+		name: "Inoice Data",
+		axisYType: "secondary",
+		showInLegend: true,
+		dataPoints:[
+			{ label: "Jan", y: 10.46 },
+			{ label: "Feb", y: 2.27 },
+			{ label: "March", y: 3.99 },
+			{ label: "April", y: 4.45 },
+			{ label: "May", y: 2.92 },
+			{ label: "June", y: 3.1 },
+			{ label: "July", y: 10.46 },
+			{ label: "Augest", y: 2.27 },
+			{ label: "Sep", y: 3.99 },
+			{ label: "Oct", y: 4.45 },
+			{ label: "Nov", y: 2.92 },
+			{ label: "Dec", y: 3.1 }
+		]
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	}
+	else {
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+
+}
+
+
+</script>
+
+ <title>Document</title>
+ <link rel="stylesheet" href="frt.css"></link>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<style>
+.container-fluid{
+	margin-left:260px;
+	margin-top:70px;
+}
+
+.col-sm-1{
+	width:55px;
+	height:80px;
+}
+
+.col-sm-2{
+	width:20px;
+	height:50px;
+}
+
+.col-sm-3{
+	width:250px;
+	height:90px;
+}
+
+
+.col-sm-4{
+	width:200px;
+	height:100px;
+	margin-top:40px;
+	margin-left:25px;
+}
+
+.col-sm-6{
+	width:555px;
+	height:400px;
+	margin-top:10px;
+}
+</style>
+
+
+  
+</head>
+ <body style="background-color:GhostWhite;">
+
+ <!-- Top NavBar -->
+  <div class="navbar">
+		<a href="#"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></a>
+		<a class="active" href="#"><i class="material-icons"  style='font-size:15px'>&#xe87b;</i> HR 360</a> 
+		<a href="#"><i class="material-icons" style='font-size:15px'>&#xe84f;</i> Procure to Pay</a> 
+		<a href="#"><i style="font-size:15px" class="fa" >&#xf201;</i> Record to Report</a> 
+		<a href="#"><i style="font-size:20px" class="fa">&#xf218;</i> Lead to Sale</a>
+		<a href="#"><i class="fa fa-fw fa-plane"></i> immigritation</a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"><i class="material-icons">&#xe895;</i></a>
+		<a href="#"></a>
+		<a href="#"><i class="material-icons">&#xe003;</i></a>
+		<a href="#"> <span class="glyphicon">&#xe008;</span> FirstName</a>
+		<a href="#"></a>
+		<a href="#">Name</a>
+	</div>
+
+
+
+<!-- Four Boarder boxes or Bootstrap columns -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" style="background-color:white;"><i class="fa fa-fw fa-cubes" style="font-size:36px;"></i>
+	<table class="Nani">
+		<tr><td class="mammu"><b>33</b></td></tr>
+		<tr><td>Projects</td></tr>
+	</table></div>
+	
+		<div class="col-sm-1" style="background-color:GhostWhite;"></div>
+    <div class="col-sm-3" style="background-color:white;"><i class="fa fa-fw fa-usd" style="font-size:36px;"></i>
+	<table class="Nani">
+		<tr><td  class="mammu"><b>16</b></td></tr>
+		<tr><td>Customers</td></tr>
+	</table></div>
+
+
+		<div class="col-sm-1" style="background-color:GhostWhite;"></div>
+    <div class="col-sm-3" style="background-color:white;"><i style="font-size:36px" class="fa">&#xf219;</i> 
+	<table class="Nani">
+		<tr><td  class="mammu"><b>0</b></td></tr>
+		<tr><td>Request</td></tr>
+	</table></div>
+
+		<div class="col-sm-1" style="background-color:GhostWhite;"></div>
+	<div class="col-sm-3" style="background-color:white;"><i class="fa fa-fw fa-user" style="font-size:36px;"></i>
+	<table class="Nani">
+		<tr><td  class="mammu"><b>29</b></td></tr>
+		<tr><td>Employees</td></tr>
+	</table></div>
+  </div>
+</div>
+
+
+
+<!-- RightSide Bottom Box -->
+<div class="btmbox">
+<div class="col-sm-6" style="background-color:white;"><div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></div>
+	 <div class="col-sm-1" style="background-color:GhostWhite;"></div>
+
+		<div class="col-sm-6" style="background-color:white;"><h3 style="text-align:center;"><b>Notifications</b></h3>
+				<div class="col-sm-4" style="background-color:Snow;">
+				<table class="chintu">
+					<tr><td style="font-size:25px;"><b>24<b></td></tr>
+					<tr><td>OutStanding w9 Approvals</td></tr>
+				</table></div>
+
+
+				<div class="col-sm-2" style="background-color:white;"></div>  
+
+    			<div class="col-sm-4" style="background-color:Snow;">
+				<table class="chintu">
+					<tr><td style="font-size:25px;"><b>3</b></td></tr>
+					<tr><td>OutStanding w9 Approvals</td></tr>
+				</table></div>
+				
+				
+				<div class="col-sm-4" style="background-color:Snow;">
+				<table class="btmsecbox">
+					<tr><td style="font-size:25px;"><b>29</b></td></tr>
+					<tr><td>Employees</td></tr>
+				</table></div>
+				
+			  
+				<div class="col-sm-2" style="background-color:white;"></div> 
+				
+    			<div class="col-sm-4" style="background-color:Snow;">
+				<table class="btmsecbox">
+					<tr><td style="font-size:25px;"><b>29</b></td></tr>
+					<tr><td>Employees</td></tr>
+				</table></div>
+				
+		</div>
+  </div>
+</div>
+
+
+
+<!-- SideNav Bar -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#"> <span class="glyphicon glyphicon-dashboard" style='font-size:22px'></span> Dashboard</a>
+  <a href="#"> <span class="glyphicon">&#xe008;</span> Employees</a>
+  <a href="#"><span class="glyphicon">&#xe056;</span> CheckList</a>
+  <a href="#"><i class="material-icons">&#xe84f;</i> Customer</a>
+  <a href="#">  <span class="glyphicon">&#xe118;</span> Document catagory</a>
+  <a href="#"><i class="material-icons">&#xe8d3;</i> Department</a>
+  <a href="#"><i class="material-icons" style='font-size:22px'>&#xe0d0;</i> Designation</a>
+  <a href="#"><i style="font-size:22px" class="fa">&#xf24e;</i> Paystubs</a>
+  <a href="#"><i style="font-size:22px" class="fa">&#xf073;</i> TimeSheets</a>
+  <a href="#"><i class="material-icons" style="font-size:22px;">&#xe80b;</i> Projects</a>
+  <a href="#"><i class="material-icons" style="font-size:22px;">&#xe834;</i> Approvers</a>
+</div>
+<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+		}
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+</script>
+
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+​
+ </body>
+</html>
+

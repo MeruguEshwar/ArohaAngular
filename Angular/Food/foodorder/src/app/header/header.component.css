@@ -1,0 +1,34 @@
+a{
+    color: black;
+    font-family: bold;
+}
+
+a:hover{
+    background-color: red;
+    color: white;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo{
+    padding: 1em;
+}
+
+nav a{
+    padding: 1em;
+    display: inline-block;
+    font-family: bold;
+    text-decoration-line: none;
+}
+
+nav{
+    background-color: white;
+    padding: 0;
+    border-bottom: 1px solid red;
+    list-style-type: none;
+    margin: 0;
+}

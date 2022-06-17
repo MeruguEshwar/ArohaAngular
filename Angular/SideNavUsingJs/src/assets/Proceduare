@@ -1,0 +1,7 @@
+->Install Jquery using 
+        ->npm install jquery
+
+->Install Bootstrap using
+        ->npm install Bootstrap
+
+->Create an JS File and give the path into the angular.js file

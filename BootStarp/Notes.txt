@@ -1,0 +1,22 @@
+Bootstrap is used for screens as responsive...
+
+
+col-sm-3 -> Is Used for dividing the column
+
+=>.container class provides a responsive fixed width container
+EX:-
+<div class="container"> or  <div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p> 
+  <p>The .container class provides a responsive fixed width container.</p>           
+</div>
+=> .container-fluid class provides a full width container, spanning the entire width of the viewport
+
+		
+		Bootstrap Grid System:
+> Bootstrap's grid system allows up to 12 columns across the page.
+
+>xs (for phones - screens less than 768px wide)
+>sm (for tablets - screens equal to or greater than 768px wide)
+>md (for small laptops - screens equal to or greater than 992px wide)
+>lg (for laptops and desktops - screens equal to or greater than 1200px wide)
